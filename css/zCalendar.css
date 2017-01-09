@@ -1,0 +1,39 @@
+/*工作日历样式*/
+.zcalendar-header{
+  height: 40px;
+  line-height: 40px;
+  background: rgb(0, 193, 155);
+  text-align: center;
+  font-size: 16px;
+}
+.zcalendar-header>.header-item,.zcalendar-item{
+  list-style: none;
+  float: left;
+  width: 14.28%;
+  color:#fff;
+}
+.zcalendar-item{
+  height: 55px;
+  background: rgb(0, 199, 161);
+  font-size: 15px;
+  text-indent: 10px;
+  padding: 5px 0;
+  border-left: 1px solid #00b894;
+  border-bottom: 1px solid #00b894;
+  margin-left: -1px;
+}
+.zcalendar-item.disabled{
+  color: rgba(255,255,255,.5);
+}
+.zcalendar-item.active{
+  background: rgb(0,221,177);
+}
+.zcalendar-tag{
+  font-size: 13px;
+  margin-top: 5px;
+  text-indent: 0;
+  height: 30px;
+  line-height: 15px;
+  padding: 0 3px;
+  overflow: hidden;
+}

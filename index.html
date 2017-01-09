@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>zCalendar</title>
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/zCalendar.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <script src="./lib/jquery-3.1.1.min.js"></script>
+    <script src="./lib/hammer.min.js"></script>
+    <script src="./js/zCalendar.js"></script>
+    <script>
+    $(function(){
+      var calendar = $(document.body).zcalendar({
+        onCompleted:function(){
+          console.log('inited');
+        },
+        onSwipeLeft:function(){
+          console.log('swipe left');
+        },
+        onSwipeRight:function(){
+          console.log('swipe right');
+        },
+        onSelected:function(){
+          console.log('selected');
+        }
+      });
+      calendar.changeTag((new Date()).getTime(),'请老师吃方便面6666666');
+    })
+    </script>
+</body>
+
+</html>
