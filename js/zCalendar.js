@@ -98,7 +98,7 @@
 				else{
 					changeMonth(date);
 				}
-        onSelected&&onSelected();
+        onSelected&&onSelected(date);
     }
 
     //修改工作提示
@@ -186,7 +186,7 @@
     var _zcalendar={
       options:{},
       getDate:function(){
-        return _calView.secDate;
+        return _calView.secDate();
       },
       init:function(){
         this.options=options;

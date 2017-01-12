@@ -26,10 +26,12 @@
         onSwipeRight:function(){
           console.log('swipe right');
         },
-        onSelected:function(){
+        onSelected:function(date){
+          console.log(date.toLocaleDateString());
           console.log('selected');
         }
       });
+      console.log(calendar.getDate().toLocaleDateString());
       calendar.changeTag((new Date()).getTime(),'请老师吃方便面6666666');
     })
     </script>
